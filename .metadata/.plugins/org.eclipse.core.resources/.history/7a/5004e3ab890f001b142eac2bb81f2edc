@@ -1,0 +1,15 @@
+package com.ecommerce.microcommerce.configuration;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+@EnableHystrixDashboard
+@EnableCircuitBreaker
+public class CircuitBreakerApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(CircuitBreakerApplication.class, args);
+	}
+
+}
