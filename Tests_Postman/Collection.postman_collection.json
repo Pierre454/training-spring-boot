@@ -25,60 +25,19 @@
 			"response": []
 		},
 		{
-			"name": "calculerMargeProduit/1",
+			"name": "calculerMargeProduit",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:9090/Marge/1",
+					"raw": "http://localhost:9090/AdminProduits",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "9090",
 					"path": [
-						"Marge",
-						"1"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "calculerMargeProduit/2",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "http://localhost:9090/Marge/2",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "9090",
-					"path": [
-						"Marge",
-						"2"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "calculerMargeProduit/3",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "http://localhost:9090/Marge/3",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "9090",
-					"path": [
-						"Marge",
-						"3"
+						"AdminProduits"
 					]
 				}
 			},

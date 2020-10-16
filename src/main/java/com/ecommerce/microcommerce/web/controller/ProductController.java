@@ -1,12 +1,12 @@
 package com.ecommerce.microcommerce.web.controller;
 
 import java.net.URI;
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.Sort;
 import org.springframework.http.ResponseEntity;
 import org.springframework.http.converter.json.MappingJacksonValue;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -22,6 +22,7 @@ import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 import com.ecommerce.microcommerce.dao.ProductDao;
 import com.ecommerce.microcommerce.model.Product;
+import com.ecommerce.microcommerce.web.exceptions.ProduitGratuitException;
 import com.ecommerce.microcommerce.web.exceptions.ProduitIntrouvableException;
 import com.fasterxml.jackson.databind.ser.FilterProvider;
 import com.fasterxml.jackson.databind.ser.impl.SimpleBeanPropertyFilter;
@@ -78,7 +79,7 @@ public class ProductController {
             return ResponseEntity.noContent().build();
         
         if (productAdded.getPrix() == 0)
-            return ResponseEntity.noContent().build();
+            throw new ProduitGratuitException("Prix de vente invalide pour " + productAdded);
 
         URI location = ServletUriComponentsBuilder
                 .fromCurrentRequest()
@@ -88,26 +89,24 @@ public class ProductController {
 
         return ResponseEntity.created(location).build();
     }
-
+   
     //calculerMargeProduit
-    @RequestMapping(value = "/Marge/{id}", method = RequestMethod.GET)
-    public int calculerMargeProduit(@PathVariable int id){
-    	 Product produit = productDao.findById(id);
-    	 return produit.getPrixAchat()-produit.getPrix();
+    @RequestMapping(value = "/AdminProduits", method = RequestMethod.GET)
+    public  String calculerMargeProduit(){
+    	 List<Product> produits = productDao.findAll();
+    	 List<Integer> prod = new ArrayList<Integer>();
+    	 for(int i=0;i<produits.size();i++) {
+    		prod.add(produits.get(i).getPrixAchat()-produits.get(i).getPrix());
+    	 }
+    	 return produits.toString()+":"+prod.toString();
     }
     
     //trierProduitsParOrdreAlphabetique 
     @RequestMapping(value = "/OrdreAlpha", method = RequestMethod.GET)
     public List<Product> trierProduitsParOrdreAlphabetique() {	
-    	 List<Product> produits = productDao.findAll(sortByIdAsc());
-    	 System.out.println(produits);
-    	 return produits;
+    	return productDao.Tri();
     }
     
-    private Sort sortByIdAsc() {
-        return new Sort(Sort.Direction.ASC, "nom");
-    }
-
     @DeleteMapping (value = "/Produits/{id}")
     public void supprimerProduit(@PathVariable int id) {
         productDao.delete(id);
