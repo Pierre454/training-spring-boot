@@ -2233,3 +2233,8 @@ com.google.inject.ProvisionException: Unable to provision, see the following err
 2020-10-22 08:45:52,455 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
 2020-10-22 08:45:52,458 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2020-10-22 08:45:52,458 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/deptinfo/Bureau/MASTER_2_MIAGE/Spring/Projet/training-spring-boot/spring-circuitdebreaker-service/src/test/resources
+2020-10-22 08:57:46,492 [Worker-20: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-10-22 08:57:46,492 [Worker-20: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-10-22 08:57:46,499 [Worker-20: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-10-22 08:57:46,501 [Worker-20: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-10-22 08:57:46,501 [Worker-20: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/deptinfo/Bureau/MASTER_2_MIAGE/Spring/Projet/training-spring-boot/spring-ecommerce-service/src/test/resources
