@@ -14,10 +14,27 @@ public class ServiceController {
 	@Autowired
     ServiceDelegate serviceDelegate;
 
-	@RequestMapping(value = "/Produits/{id}", method = RequestMethod.GET)
-	public String getProduits(@PathVariable int id) {
+	@RequestMapping(value = "/Produits", method = RequestMethod.GET)
+	public String getProduits() {
 		System.out.println("Going to get data!");
-		return serviceDelegate.callServiceAndGetData(id);
+		return serviceDelegate.callServiceAndGetData();
+	}
+
+	@RequestMapping(value = "/Produits/{id}", method = RequestMethod.GET)
+	public String getProduitsById(@PathVariable int id) {
+		System.out.println("Going to get data!");
+		return serviceDelegate.callServiceAndGetDataById(id);
 	}
 	
+	@RequestMapping(value = "/AdminProduits", method = RequestMethod.GET)
+	public String getProduitsAdmin() {
+		System.out.println("Going to get data!");
+		return serviceDelegate.callServiceAndGetDataAdmin();
+	}
+	
+	@RequestMapping(value = "/OrdreAlpha", method = RequestMethod.GET)
+	public String getProduitsTri() {
+		System.out.println("Going to get data!");
+		return serviceDelegate.callServiceAndGetDataTri();
+	}	
 }
