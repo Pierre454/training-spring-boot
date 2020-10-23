@@ -31,7 +31,6 @@ import com.fasterxml.jackson.databind.ser.impl.SimpleFilterProvider;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 
-
 @Api("API pour es opérations CRUD sur les produits.")
 @RestController
 public class ProductController {
@@ -40,6 +39,7 @@ public class ProductController {
     private ProductDao productDao;
 
     //Récupérer la liste des produits
+    @ApiOperation(value = "Recupére les produits filtrés ! ")
     @RequestMapping(value = "/Produits", method = RequestMethod.GET)
     public MappingJacksonValue listeProduits() {
 
@@ -58,7 +58,7 @@ public class ProductController {
 
 
     //Récupérer un produit par son Id
-    @ApiOperation(value = "Récupère un produit grâce à son ID à condition que celui-ci soit en stock!")
+    @ApiOperation(value = "Récupère un produit grâce à son ID à condition que celui-ci soit en stock !")
     @GetMapping(value = "/Produits/{id}")
     public Product afficherUnProduit(@PathVariable int id) {
 
@@ -70,6 +70,7 @@ public class ProductController {
     }
 
     //ajouter un produit
+    @ApiOperation(value = "Permets d'ajouter un nouveau produit ! ")
     @PostMapping(value = "/Produits")
     public ResponseEntity<Void> ajouterProduit(@Valid @RequestBody Product product) {
 
@@ -91,6 +92,7 @@ public class ProductController {
     }
    
     //calculerMargeProduit
+    @ApiOperation(value = "Calcule les marges des produits ! ")
     @RequestMapping(value = "/AdminProduits", method = RequestMethod.GET)
     public  String calculerMargeProduit(){
     	 List<Product> produits = productDao.findAll();
@@ -102,22 +104,26 @@ public class ProductController {
     }
     
     //trierProduitsParOrdreAlphabetique 
+    @ApiOperation(value = "Affiche les produits triés par ordre alphabetique ! ")
     @RequestMapping(value = "/OrdreAlpha", method = RequestMethod.GET)
     public List<Product> trierProduitsParOrdreAlphabetique() {	
     	return productDao.Tri();
     }
     
+    @ApiOperation(value = "Permet de supprimer un produit ! ")
     @DeleteMapping (value = "/Produits/{id}")
     public void supprimerProduit(@PathVariable int id) {
         productDao.delete(id);
     }
 
+    @ApiOperation(value = "Permet de sauvegarder une modif d'un produit ! ")
     @PutMapping (value = "/Produits")
     public void updateProduit(@RequestBody Product product) {
         productDao.save(product);
     }
 
     //Pour les tests
+    @ApiOperation(value = "Permet d'afficher les produits avec un prix supérieur à 400 ! ")
     @GetMapping(value = "test/produits/{prix}")
     public List<Product> testeDeRequetes(@PathVariable int prix) {
         return productDao.chercherUnProduitCher(400);
