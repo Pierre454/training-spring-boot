@@ -2775,3 +2775,39 @@ com.google.inject.ProvisionException: Unable to provision, see the following err
 2020-10-23 11:17:51,805 [Worker-64: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2020-10-23 11:17:51,805 [Worker-64: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/deptinfo/Bureau/MASTER_2_MIAGE/Spring/Projet/training-spring-boot/spring-ecommerce-service/src/test/resources
 2020-10-26 08:13:59,839 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2020-10-26 09:15:44,911 [Worker-21: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.example.workshopmicroservices:spring-hystrix-school-service:0.0.1-SNAPSHOT @ /home/deptinfo/Bureau/MASTER_2_MIAGE/Spring/Projet/training-spring-boot/spring-circuitdebreaker-service/pom.xml.
+2020-10-26 09:15:45,874 [Worker-21: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-10-26 09:15:45,877 [Worker-21: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-10-26 09:15:45,897 [Worker-21: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-10-26 09:15:45,899 [Worker-21: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-10-26 09:15:45,899 [Worker-21: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/deptinfo/Bureau/MASTER_2_MIAGE/Spring/Projet/training-spring-boot/spring-circuitdebreaker-service/src/test/resources
+2020-10-26 09:17:29,841 [Worker-21: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.ecommerce.microcommerce.circuitdebreakerservice:spring-hystrix-school-service:0.0.1-SNAPSHOT @ /home/deptinfo/Bureau/MASTER_2_MIAGE/Spring/Projet/training-spring-boot/spring-circuitdebreaker-service/pom.xml.
+2020-10-26 09:17:30,447 [Worker-21: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-10-26 09:17:30,461 [Worker-21: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-10-26 09:17:30,461 [Worker-21: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-10-26 09:17:30,464 [Worker-21: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-10-26 09:17:30,464 [Worker-21: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/deptinfo/Bureau/MASTER_2_MIAGE/Spring/Projet/training-spring-boot/spring-circuitdebreaker-service/src/test/resources
+2020-10-26 09:18:07,012 [Worker-21: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.ecommerce.microcommerce.circuitdebreakerservice:spring-cicuitdebreaker-service:0.0.1-SNAPSHOT @ /home/deptinfo/Bureau/MASTER_2_MIAGE/Spring/Projet/training-spring-boot/spring-circuitdebreaker-service/pom.xml.
+2020-10-26 09:18:07,449 [Worker-21: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-10-26 09:18:07,451 [Worker-21: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-10-26 09:18:07,452 [Worker-21: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-10-26 09:18:07,454 [Worker-21: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-10-26 09:18:07,454 [Worker-21: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/deptinfo/Bureau/MASTER_2_MIAGE/Spring/Projet/training-spring-boot/spring-circuitdebreaker-service/src/test/resources
+2020-10-26 09:18:38,976 [Worker-16: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.ecommerce.microcommerce.circuitdebreakerservice:spring-cicuit-de-breaker-service:0.0.1-SNAPSHOT @ /home/deptinfo/Bureau/MASTER_2_MIAGE/Spring/Projet/training-spring-boot/spring-circuitdebreaker-service/pom.xml.
+2020-10-26 09:18:39,464 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-10-26 09:18:39,466 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-10-26 09:18:39,466 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-10-26 09:18:39,469 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-10-26 09:18:39,469 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/deptinfo/Bureau/MASTER_2_MIAGE/Spring/Projet/training-spring-boot/spring-circuitdebreaker-service/src/test/resources
+2020-10-26 09:20:01,916 [Worker-25: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.ecommerce.microcommerce:circuitdebreakerservice:0.0.1-SNAPSHOT @ /home/deptinfo/Bureau/MASTER_2_MIAGE/Spring/Projet/training-spring-boot/spring-circuitdebreaker-service/pom.xml.
+2020-10-26 09:20:02,363 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-10-26 09:20:02,364 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-10-26 09:20:02,365 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-10-26 09:20:02,367 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-10-26 09:20:02,368 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/deptinfo/Bureau/MASTER_2_MIAGE/Spring/Projet/training-spring-boot/spring-circuitdebreaker-service/src/test/resources
+2020-10-26 09:20:42,358 [Worker-25: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.ecommerce.microcommerce:circuitdebreakerservice:0.0.1-SNAPSHOT @ /home/deptinfo/Bureau/MASTER_2_MIAGE/Spring/Projet/training-spring-boot/spring-circuitdebreaker-service/pom.xml.
+2020-10-26 09:20:42,879 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-10-26 09:20:42,881 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-10-26 09:20:42,881 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-10-26 09:20:42,886 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-10-26 09:20:42,887 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/deptinfo/Bureau/MASTER_2_MIAGE/Spring/Projet/training-spring-boot/spring-circuitdebreaker-service/src/test/resources
