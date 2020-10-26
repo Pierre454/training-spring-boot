@@ -6,4 +6,10 @@
     <fullyQualifiedTypeName name="java.util.Comparator"/>
     <fullyQualifiedTypeName name="java.util.stream.Collectors"/>
     <fullyQualifiedTypeName name="org.springframework.data.domain.Sort.Order"/>
+    <fullyQualifiedTypeName name="com.ecommerce.microcommerce.web.controller.ProductController"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+    <fullyQualifiedTypeName name="org.springframework.web.context.WebApplicationContext"/>
+    <fullyQualifiedTypeName name="org.springframework.test.web.servlet.MockMvc"/>
+    <fullyQualifiedTypeName name="org.junit.Before"/>
+    <fullyQualifiedTypeName name="com.fasterxml.jackson.annotation.JsonFilter"/>
 </qualifiedTypeNameHistroy>

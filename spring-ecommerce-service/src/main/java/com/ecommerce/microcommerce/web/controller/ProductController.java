@@ -94,11 +94,11 @@ public class ProductController {
     //calculerMargeProduit
     @ApiOperation(value = "Calcule les marges des produits ! ")
     @RequestMapping(value = "/AdminProduits", method = RequestMethod.GET)
-    public  String calculerMargeProduit(){
+    public String calculerMargeProduit(){
     	 List<Product> produits = productDao.findAll();
     	 List<Integer> prod = new ArrayList<Integer>();
     	 for(int i=0;i<produits.size();i++) {
-    		prod.add(produits.get(i).getPrixAchat()-produits.get(i).getPrix());
+    		prod.add(produits.get(i).getPrix()-produits.get(i).getPrixAchat());
     	 }
     	 return produits.toString()+":"+prod.toString();
     }
