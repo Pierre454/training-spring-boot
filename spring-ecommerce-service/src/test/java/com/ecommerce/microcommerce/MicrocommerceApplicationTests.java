@@ -45,7 +45,7 @@ public class MicrocommerceApplicationTests {
 				
 				.andExpect(jsonPath("$.[2].id",is(3)))
 				.andExpect(jsonPath("$.[2].nom",is("Table de Ping Pong")))
-				.andExpect(jsonPath("$.[2].prix",is(750)))
+				.andExpect(jsonPath("$.[2].prix",is(750))) 
 			    .andExpect(jsonPath("$.[2].prixAchat",is(400)));			
 	}
 	
